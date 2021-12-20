@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(2915376.jpg);
+    font-family:sans-serif;
+}
+.container {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background-color: rgba(225, 225, 225, 0.25);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+}
+.container img {
+    width: 270px;
+    height: auto;
+    position: absolute;
+    transition: 0.5s;
+    top: 45px;
+}
+.container .card div {
+    display: flex;
+    justify-content: baseline;
+    transform: translateY(70px);
+}
+.container .card div ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+}
+.container .card div ul li {
+    float: left;
+    cursor: pointer;
+}
+.container .card .size h3 {
+    margin: 0;
+    align-self: center;
+}
+.container .card .size ul li {
+    padding: 7px 8px;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 3px;
+}
+.container .card .size ul li:hover {background-color: yellow;}
+.container .card .colors ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 4px;
+}
+.container .card .colors ul li:hover {border-color: yellow;}
+.container .card .colors ul li:nth-child(1) {background-color: #b7f437;}
+.container .card .colors ul li:nth-child(2) {background-color: #1686fd;}
+.container .card .colors ul li:nth-child(3) {background-color: #f23e3d;}
+.container .card .colors h3 {
+    margin: 0;
+    align-self: center;
+}
+.btn {
+    position: relative;
+    background-color: white;
+    border: 0;
+    box-shadow: none;
+    padding: 17px 22px;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 15px;
+    transform: translateY(70px);
+    cursor: pointer;
+}
+.btn:hover {background-color: yellow;}
+.container h2 {
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 95px;
+    transition: 0.5s;
+}
+.container:hover img {
+    top: -120px;
+    transform: scale(1.5) rotateZ(15deg);
+}
+.btn, .container .card .size, .container .colors {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.container:hover .card .btn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.container:hover .size, .container:hover .colors {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+
+}
+.container:hover h2 {
+    transform: translateY(-115px);
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.container .card .colors ul .active {
+    border-color: yellow;
+}

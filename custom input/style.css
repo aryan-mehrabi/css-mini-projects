@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #141414;
+}
+.container{
+    background-color: black;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black, -2px -2px 10px black;
+}
+h2 {
+    color: #525252;
+    font-size: 32px;
+}
+.container form {
+    height: 100%;
+    width: 75%;
+    position: relative;
+}
+.container form div {
+    margin-top: 40px;
+    position: relative;
+    height: 40px;
+
+}
+.container form div input {
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    font-size: 22px;
+    color: white;
+}
+.container form div label {
+    position: absolute;
+    font-size: 18px;
+    pointer-events: none;
+    color: #525252;
+    transition: 0.5s
+}
+.container form div span {
+    background-color: teal;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.btn {
+    margin: 50px auto 50px auto;
+    margin-bottom: 50px;
+    border: 0;
+    padding: 20px 60px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #525252;
+    color: white;
+    position: relative;
+    display: block;
+    font-size: 16px;
+}
+.container form div input[type="text"]:focus + label,
+.container form div input[type="text"]:valid + label {
+    transform: translateY(-22px);
+}
+.container form div input[type="password"]:focus + label,
+.container form div input[type="password"]:valid + label {
+    transform: translateY(-22px);
+}
+.btn:hover {
+    background-color: teal;
+}

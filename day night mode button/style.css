@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.shit::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    left: -35px;
+}
+.shit {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    top: 50vh;
+    left: calc(50% + 35px);
+    transform: translate(-50%, -50%)
+}
+.shit::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    left: 35px;
+}
+.container {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+    top: 5px;
+    left: -30px;
+    transition: 0.5s;
+}
+.shit:active .container {
+    left: 40px;
+}

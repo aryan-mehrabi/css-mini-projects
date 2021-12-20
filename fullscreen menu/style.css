@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.menu-bar {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    position: relative;
+    transition: 0.5s;
+    transform: scale(0);
+}
+.menu-bar ul{
+    margin: 0;
+    position: absolute;
+    list-style: none;
+    /* background-color: rosybrown; */
+    height: 70%;
+    width: auto;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu-bar ul li {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.menu-bar ul li:hover {
+    transform: scale(1.2);
+}
+.menu {
+    z-index: 1;
+    width: 45px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform-origin: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+}
+.menu div{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    transition: 0.4s;
+}
+.change div:nth-child(1) {
+    transform: rotateZ(-45deg) translate(-11px, 20px);
+}
+.change div:nth-child(3) {
+    transform: rotateZ(45deg) translate(0px, -10px);
+}
+.change div:nth-child(2) {
+    opacity: 0;
+}
+.display {
+    transform: scale(1);
+}

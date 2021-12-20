@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.wave {
+    background: url(wave.png);
+    width: 100%;
+    height: 143px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: animation 10s infinite ;
+    animation-timing-function: linear;
+}
+.wave::before {
+    content: "";
+    background: url(wave.png);
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 143px;
+    opacity: 0.7;
+    animation: animation 10.5s linear infinite reverse;
+}
+.wave::after {
+    content: "";
+    background: url(wave.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 143px;
+    opacity: 0.2;
+    animation: animation 9.5s linear 2s infinite alternate-reverse;
+}
+@keyframes animation {
+    0% {background-position: 0;}
+    100% {background-position: 1360px;}
+}

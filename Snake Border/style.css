@@ -1,0 +1,56 @@
+.hey {
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+.top {
+    background-color: blue;
+    position: absolute;
+    width: 85px;
+    height: 5px;
+    top: -5px;
+    left: -5px;
+    transition: 0.35s;
+}
+.bottom {
+    background-color: blue;
+    position: absolute;
+    width: 85px;
+    height: 5px;
+    bottom: -5px;
+    right: -5px;
+    transition: 0.35s;
+}
+.left {
+    background-color: blue;
+    position: absolute;
+    width: 5px;
+    height: 0px;
+    top: -5px;
+    left: -5px;
+    transition: 0.35s;
+}
+.right {
+    background-color: blue;
+    position: absolute;
+    width: 5px;
+    height: 0px;
+    bottom: -5px;
+    right: -5px;
+    transition: 0.35s;
+}
+.hey:hover .left{
+    height: 85px;
+}
+.hey:hover .right{
+    height: 85px;
+}
+.hey:hover .top{
+    width: 0px;
+}
+.hey:hover .bottom{
+    width: 0px;
+}

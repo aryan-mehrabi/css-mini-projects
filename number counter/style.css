@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.first-one {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.second-one {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: black;
+}
+p {
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

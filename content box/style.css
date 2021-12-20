@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    position: relative;
+    margin: 200px auto;
+    height: 220px;
+    width: 800px;
+}
+.container .box {
+    background-color: red;
+    position: relative;
+    width:  246.6px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container .box .icon {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.4s;
+    top: 0%;
+    left: 0%;
+}
+.container .box .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    transition: 0.4s;
+}
+.container .box:hover .icon {
+    top: 7%;
+    left: 98.3px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container .box:hover .icon .fa{
+    font-size: 22px;
+}
+.container .box .text {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 150%;
+    left: 5%;
+    transition: 0.4s;
+    margin: auto;
+    text-align: center;
+}
+.container .box:hover .text {
+    top: 30%;
+}
+.container .box .text p {
+    margin-top: 0;
+    font-size: 16px;
+}
+.container .box .text h3 {
+    margin-bottom: 10px;
+}
+.container .box:nth-child(1) {
+    background-color: #fed049;
+}
+.container .box:nth-child(1) .icon {
+    background-color: #ffc621;
+}
+.container .box:nth-child(2) {
+    background-color: #008a96;
+}
+.container .box:nth-child(2) .icon {
+    background-color: #007580;
+}
+.container .box:nth-child(3) {
+    background-color: #d8ebe4;
+}
+.container .box:nth-child(3) .icon {
+    background-color: #c8dbd4;
+}

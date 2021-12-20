@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.section {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+}
+.split {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 2;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.split:nth-child(1){
+    background: url(uwp379920.jpeg);
+    background-size: 1300px;
+    background-position: center ;
+    transition: 1s;
+}
+.split:nth-child(2) {
+    background: url(wp3841407-captain-marvel-carol-danvers-wallpapers.jpg);
+    background-size: 1300px;
+    background-position: center ;
+    transition: 1s;
+}
+.split:nth-child(3) {
+    background: url(wp8405070-thor-full-screen-wallpapers.jpg);
+    background-size: 1300px;
+    background-position: center;
+    transition: 1s;
+}
+.section:hover .split {
+    opacity: 0.1;
+}
+.section .split:hover {
+    flex-grow: 5;
+    opacity: 1;
+}
+h2 {
+    margin:10px;
+    opacity: 1;
+    color: red;
+}
+p {
+    margin: 10px;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+.content {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background: white;
+    opacity: 0.9;
+    transform: translate(100%);
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+.split:hover .content {
+    transform: translate(0);
+}
